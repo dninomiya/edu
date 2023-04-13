@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React, { useMemo, useState } from 'react';
 
 type Animal = {
@@ -103,7 +104,8 @@ const Seesaw = () => {
   };
 
   return (
-    <div className="App">
+    <div>
+      <Link href="/">back</Link>
       <div className="flex flex-col items-center justify-center h-screen">
         <div>
           <h1 className="text-4xl font-bold mb-4">Animal Weight Seesaw</h1>
