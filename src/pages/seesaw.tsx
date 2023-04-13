@@ -7,10 +7,10 @@ type Animal = {
 };
 
 const animals: Animal[] = [
-  { name: 'Lion', weight: 150, image: '/images/animals/lion.png' },
-  { name: 'Tiger', weight: 250, image: '/images/animals/tiger.png' },
-  { name: 'Bear', weight: 300, image: '/images/animals/bear.png' },
-  { name: 'Elephant', weight: 5000, image: '/images/animals/elephant.png' },
+  { name: 'Lion', weight: 150, image: '/edu/images/animals/lion.png' },
+  { name: 'Tiger', weight: 250, image: '/edu/images/animals/tiger.png' },
+  { name: 'Bear', weight: 300, image: '/edu/images/animals/bear.png' },
+  { name: 'Elephant', weight: 5000, image: '/edu/images/animals/elephant.png' },
 ];
 
 const Seesaw = () => {
