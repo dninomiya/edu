@@ -131,6 +131,7 @@ const Seesaw = () => {
                 id="left-animal-count"
                 type="number"
                 min="1"
+                max="5"
                 value={leftAnimalCount}
                 onChange={handleLeftAnimalCountChange}
                 className="form-input"
