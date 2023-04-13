@@ -37,7 +37,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       - name: Static HTML export with Next.js
-        run: pnpm next export
+        run: pnpm build
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
