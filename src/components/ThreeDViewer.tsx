@@ -6,7 +6,7 @@ import React, { useEffect, useRef, useState } from 'react';
 const ThreeDViewer: React.FC = () => {
   const [blocks, setBlocks] = useState<any[]>([]);
   const cameraControlRef = useRef<CameraControls>(null);
-  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const mainCanvasRef = useRef<HTMLCanvasElement>(null);
 
   const createRandomBlock = (x: number, y: number, z: number) => {
     const color = '#' + Math.floor(Math.random() * 16777215).toString(16);
@@ -141,7 +141,7 @@ const ThreeDViewer: React.FC = () => {
       </button>
 
       <Canvas
-        ref={canvasRef}
+        ref={mainCanvasRef}
         className="mx-auto border"
         style={{ width: 480, height: 480 }}
         orthographic
@@ -151,6 +151,7 @@ const ThreeDViewer: React.FC = () => {
         <ambientLight intensity={0.5} />
         <pointLight position={[10, 10, 10]} />
         {blocks}
+
         <OrbitControls />
       </Canvas>
     </div>
